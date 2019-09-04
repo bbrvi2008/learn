@@ -178,6 +178,20 @@ h3 {
     border-radius: 170px;
 }
 
+@media (max-width: 600px) {
+    .welcome_photo {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 320px) {
+    .welcome_photo {
+        width: 205px;
+        height: 205px;
+    }
+}
+
 .welcome_title {
     margin-top: 36px;
 }
