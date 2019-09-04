@@ -1,0 +1,383 @@
+@import url("./reset.css");
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Montserrat'),
+        url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PT Mono'),
+        url('../fonts/PT-Mono.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: local('PT Sans'), 
+        local('PTSans-Regular'), 
+        url('../fonts/ptsans.woff2') format('woff2'), 
+        url('../fonts/ptsans.woff') format('woff'), 
+        url('../fonts/ptsans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+        url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+        url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+html {
+    font-family: 'PT Mono';
+    font-size: 14px;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat';
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.button_hard {
+    padding: 0px;
+    border: none;
+    background-color: #0059D9;
+    border-radius: 4px;
+
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    transition: background-color .5s;
+    width: 100%;
+    padding: 14px 0;
+    margin-top: 20px;
+}
+
+.button_hard:hover {
+    background-color: #000000;
+}
+
+.button_hard:focus {
+    opacity: 0.7;
+}
+
+.button_light {
+    padding: 0;
+    border: 1px solid rgba(31, 64, 111, .2);
+    border-radius: 4px;
+
+    color: #0059D9;
+    font-size: 16px;
+    font-family: 'PT Mono'
+}
+
+.button_light:hover {
+    color: #000000;
+}
+
+.button_light:focus {
+    color: rgba(0, 89, 217, .7);
+}
+
+#load_file {
+    display: none;
+}
+
+.button_file {
+    display: block;
+    padding: 6px 0 10px 0;
+    border: 1px solid rgb(31,64,111, .2);
+    border-radius: 4px;
+    margin-top: 20px;
+    color: #0059D9;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.button_file:hover {
+    color: #000000;
+}
+
+.button_file:focus {
+    color: rgba(0, 89, 217, .7);
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+
+.welcome {
+    /* padding: 124px 0; */
+    background-color: #EFF1F2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome_photo {
+    width: 340px;
+    height: 340px;
+    background-color: blue;
+    border-radius: 170px;
+}
+
+.welcome_title {
+    margin-top: 36px;
+}
+
+.welcome_description {
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: 'PT Mono';
+    opacity: .7;
+}
+
+.welcome_connect {
+    width: 280px;
+}
+
+
+.expectations {
+    padding: 100px 0;
+}
+
+.expectations_title {
+    padding-bottom: 20px;
+}
+
+.expectations-list {
+}
+
+.expectations-item {
+    border-top: 1px solid #D2D9E2;
+    padding: 14px 0;
+}
+
+.expectations-item_description {
+    padding-top: 12px;
+    padding-bottom: 6px;
+    max-width: 520px;
+    display: none;
+    opacity: 0.7;
+}
+
+.expectations-item_title {
+    position: relative;
+    color: #0059D9;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.expectations-item_title:hover {
+    color: #000000;
+}
+
+.expectations-item_title:after {
+    /* font-family: 'Material Icons'; */
+    font-size: 24px;
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -12px;
+    transition: all .5s;
+    font-family: 'PT Mono';
+}
+
+.active .expectations-item_description {
+    display: block;
+}
+
+.active .expectations-item_title {
+    color: #000000;
+}
+
+.active .expectations-item_title:after {
+    /* content: "clear"; */
+    transition: all .5s;
+    transform: rotate(45deg);
+}
+
+
+.works {
+    padding: 100px 0;
+    background-color: #25282A;
+    text-align: center;
+}
+
+.works_desctiption {
+    max-width: 520px;
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    opacity: 0.7;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.works h2, 
+.works h3 {
+    color: #ffffff;
+}
+
+.works-list {
+
+}
+
+.works-item {
+    margin-top: 80px;
+}
+
+.works-item_link {
+    color: #71ABFF;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.works-item_poster {
+    margin-top: 20px;
+    height: 377px;
+    max-width: 100%;
+    background-color: azure;
+    border-radius: 8px;
+}
+
+.work-item_description {
+    margin-top: 20px;
+    line-height: 20px;
+    max-width: 520px;
+    color: #ffffff;
+    text-align: left;
+    font-family: 'PT Sans';
+}
+
+.work-item_paginator {
+    margin-top: 20px;
+    text-align: right;
+    float: right;
+}
+
+.work-item_paginator-item {
+    height: 8px;
+    width: 8px;
+    border-radius: 4px;
+    background: #71ABFF;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.work-item_paginator .active {
+    background: none;
+    border: 1px solid #71ABFF;
+    box-sizing: border-box;
+}
+
+.contacts {
+    padding: 100px 0;
+    background-color: #EFF1F2;
+    text-align: center;
+}
+
+.contacts textarea {
+    display: block;
+    resize: none;
+    width: 100%;
+    height: 136px;
+    margin-top: 20px;
+}
+
+.contacts input[type='text'] {
+    margin-top: 40px;
+    width: 49%;
+}
+
+.contacts textarea,
+.contacts input[type='text'] {
+    border-radius: 4px;
+    border: 1px solid rgb(31,64,111, .2);
+    padding: 6px 12px 10px;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: .7;
+}
+
+.contacts textarea:focus,
+.contacts input[type='text']:focus {
+    border-color: #0059D9;
+}
+
+.contacts_message {
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'PT Mono'
+}
+
+.social-links {
+    margin-top: 16px;
+}
+
+.social-link {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.social-link:focus {
+    opacity: .7;
+    outline: none;
+    border: none;
+}
+
+.social-link object {
+    width: 48px;
+    height: 48px;
+    pointer-events: none;
+}
+
