@@ -1,11 +1,11 @@
-@import url("./reset.css");
+@import url("/reset.css");
 
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
     src: local('Montserrat'),
-        url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+        url('/fonts/Montserrat-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -13,16 +13,16 @@
     font-style: normal;
     font-weight: normal;
     src: local('PT Mono'),
-        url('../fonts/PT-Mono.ttf') format('truetype');
+        url('/fonts/PT-Mono.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'PT Sans';
     src: local('PT Sans'), 
         local('PTSans-Regular'), 
-        url('../fonts/ptsans.woff2') format('woff2'), 
-        url('../fonts/ptsans.woff') format('woff'), 
-        url('../fonts/ptsans.ttf') format('truetype');
+        url('/fonts/ptsans.woff2') format('woff2'), 
+        url('/fonts/ptsans.woff') format('woff'), 
+        url('/fonts/ptsans.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -31,12 +31,12 @@
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: url(/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
     src: local('Material Icons'),
         local('MaterialIcons-Regular'),
-        url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
-        url(../fonts/MaterialIcons-Regular.woff) format('woff'),
-        url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+        url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+        url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+        url(/fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
 
 html {
