@@ -146,6 +146,19 @@ h3 {
 .content {
     margin: 0 auto;
     max-width: 700px;
+    padding: 0 150px;
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .content {
+        padding: 0 20px;
+    }
 }
 
 
@@ -301,6 +314,13 @@ h3 {
     float: right;
 }
 
+@media (max-width: 900px) {
+    .work-item_paginator {
+        text-align: center;
+        float: none;
+    }
+}
+
 .work-item_paginator-item {
     height: 8px;
     width: 8px;
@@ -333,6 +353,17 @@ h3 {
 .contacts input[type='text'] {
     margin-top: 40px;
     width: 49%;
+}
+
+@media (max-width: 740px) {
+    .contacts textarea {
+        margin-top: 16px;
+    }
+
+    .contacts input[type='text'] {
+        margin-top: 16px;
+        width: 100%;
+    }
 }
 
 .contacts textarea,
