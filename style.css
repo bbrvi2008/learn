@@ -358,6 +358,7 @@ h3 {
 
 .works-item_posters img {
     width: 100%;
+    transition: all .8s;
 }
 
 .work-item_description {
